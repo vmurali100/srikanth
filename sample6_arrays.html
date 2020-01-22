@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="demo"></div>
+    <script>
+      //Creating An Empty and asssigning to a variable called Users
+      var users = [];
+
+      var allUsers = ["Ram", "Ravi", "Kiran", "Kumar"];
+
+      users[0] = "Murali";
+
+      allUsers[4] = "Krishna";
+
+      //Push methos will add a value to the last of the array
+      //   allUsers.push("Sri");
+
+      //Unshift method will add a value to the first of the array
+      //   allUsers.unshift("Sri");
+
+      // Splice will add a value to the specified Index position
+      //   allUsers.splice(2, 1, "Sri");
+
+      //POP will remove a value at the last
+      //   allUsers.pop();
+
+      //Shift will remove a value at the Beginning
+      //   allUsers.shift();
+
+      //Splice method will remove a value at specified Index position
+      //   allUsers.splice(2, 1);
+
+      // Sort will sort the array
+      //   allUsers.sort();
+
+      // Reverse will reverse Array
+      //   allUsers.reverse();
+
+      var results = "";
+      for (i = 0; i < allUsers.length; i++) {
+        // console.log(allUsers[i]);
+        // results = results + allUsers[i] + "<br>";
+        results += allUsers[i] + "<br>";
+      }
+
+      document.getElementById("demo").innerHTML = results;
+    </script>
+  </body>
+</html>
