@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      var message = "Welcome to JAVASCRIPT";
+
+      var newMessage = message.split("");
+      console.log(newMessage);
+      console.log(message.slice(0, 7));
+      console.log(message.indexOf("JAVASCRIPT"));
+      console.log(message.slice(11));
+
+      var msg = "Hello Srikanth .. Welcome to Javascript Classes";
+
+      var newMsg = msg.split(" ");
+      console.log(newMsg);
+      var check = msg.indexOf("srikanth");
+      console.log(check);
+      if (check !== -1) {
+        console.log("Srikanth is attending JS Class");
+      } else {
+        console.log("Srikanth is Not attending JS Class");
+      }
+
+      var myName = "Srikanth";
+      var reverseName = myName.split("");
+      console.log(reverseName);
+      console.log(reverseName.reverse().join(""));
+    </script>
+  </body>
+</html>
